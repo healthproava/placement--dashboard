@@ -58,6 +58,11 @@ const App = () => (
               <FacilitySearch />
             </MainLayout>
           } />
+            <Route path="/facilities/:id" element={
+            <MainLayout>
+              <FacilityCard />
+            </MainLayout>
+          } />
           <Route path="/appointments" element={
             <MainLayout>
               <Appointments />
